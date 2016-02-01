@@ -16,7 +16,7 @@ var root = 'client';
 var resolveTo = function(resolvePath) {
 	return function(glob) {
 		glob = glob || '';
-		return path.resolve(path.join(root, resolvePath, glob));
+		return path.relative(root, path.resolve(path.join(root, resolvePath, glob)));
 	}
 };
 

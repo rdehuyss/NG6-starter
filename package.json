@@ -21,17 +21,28 @@
     "configFile": "jspm.config.js",
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.0",
+      "angular-bootstrap": "github:angular-ui/bootstrap-bower@^1.1.1",
       "angular-mocks": "npm:angular-mocks@^1.4.0",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "angular-ui/bootstrap-bower": "github:angular-ui/bootstrap-bower@^1.1.1",
       "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.0",
-      "css": "github:systemjs/plugin-css@^0.1.11",
+      "css": "github:systemjs/plugin-css@^0.1.20",
       "normalize.css": "github:necolas/normalize.css@^3.0.3",
       "text": "github:systemjs/plugin-text@^0.0.2"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "clean-css": "npm:clean-css@^3.4.9",
       "core-js": "npm:core-js@^1.1.4"
+    },
+    "overrides": {
+      "github:angular-ui/bootstrap-bower@1.1.1": {
+        "main": "index.js",
+        "dependencies": {
+          "angular": "jspm:angular@1.4.0"
+        }
+      }
     }
   },
   "devDependencies": {
