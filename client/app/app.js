@@ -1,5 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
+import 'angular-bootstrap';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
@@ -7,6 +8,7 @@ import 'normalize.css';
 
 let appModule = angular.module('app', [
 	'ui.router',
+	'ui.bootstrap',
 	Common.name,
 	Components.name
 ])
